@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .btn {
+            background-color: Black;
+            border: none;
+            color: white;
+            padding: 14px 18px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            /* Darker background on mouse-over */
+            .btn:hover {
+                background-color: RoyalBlue;
+            }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 140px;
+            }
+
+            .header h6 {
+                font-size: 40px;
+            }
+
+
+
+
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=number] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=number]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            button:hover {
+                opacity: 1;
+            }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            button:hover {
+                opacity: 1;
+            }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>ART GALLERY</h1>
+        <p>A website to manage art gallery</p>
+    </div>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="newsh2.html">News</a></li>
+        <li><a href="contacth3.html">Contact</a></li>
+        <li><a href="abouth4.html">About</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="side">
+            <h2>ARTS</h2>
+            <h5>Mona Lisa</h5>
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/190430171751-mona-lisa.jpg?q=w_3000,h_4470,x_0,y_0,c_fill" alt="Trulli" width="300" height="333">
+            <p>Leonardo da Vinci’s iconic Mona Lisa,<br>the world’s most famous,<br>recognizable, and copied artwork,<br>has a storied history.</p>
+            <h3>ILLUSIONS</h3>
+            <img src="https://i5.walmartimages.com/seo/Iconic-Arts-Laminated-19x14-Poster-Salvador-Dali-This-Surrealist-Painter-Creates-Amazing-Optical-Illusions_09299066-fcec-4031-a000-416c01268288.48d7691dec5065d4ce1bb3d13f7f7e1a.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF" alt="Trulli" width="300" height="444">
+            <img src="https://t3.ftcdn.net/jpg/02/73/22/74/360_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg" alt="Trulli" width="300" height="333">
+
+        </div>
+
+        <div class="main">
+            <h2>NEW CUSTOMER</h2>
+            <h5>
+                <form action="/action_page.php" style="border:1px solid #ccc">
+                    <div class="container">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+
+                        <label for="Full Name"><b>Full Name</b></label>
+                        <input type="text" placeholder="Enter Full Name" name="Full Name" required>
+
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="Phone Number"><b>Phone Number</b></label>
+                        <input type="Phone Number" placeholder="Enter Phone Number" name="Phone Number" required><br>
+
+                        <label for="Address"><br><b>Address</b></label>
+                        <input type="Address" placeholder="Enter Address" name="Address" required><br><br>
+
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+            </h5>
+            <h2>NEW ARTIST</h2>
+            <form action="/action_page.php" style="border:1px solid #ccc">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+
+                    <label for="Full Name"><b>Full Name</b></label>
+                    <input type="text" placeholder="Enter Full Name" name="Full Name" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label for="Phone Number"><b>Phone Number</b></label>
+                    <input type="Phone Number" placeholder="Enter Phone Number" name="Phone Number" required><br>
+
+                    <label for="Address"><br><b>Address</b></label>
+                    <input type="Address" placeholder="Enter Address" name="Address" required><br><br>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+
+</body>
+</html>
